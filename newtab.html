@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>New Tab</title>
+    <link rel="stylesheet" href="./main.css" />
+    <!-- *defer is used so the script will load after the DOM is created-->
+  </head>
+
+  <body>
+    <main>
+      <section id="output-section" class="output">
+        <!--example -->
+        <div>
+          <p>$ ls</p>
+          <p>output of the command</p>
+        </div>
+      </section>
+      <section id="cmd-section">
+        <span>chrome:$</span>
+        <input
+          autofocus
+          onblur="this.focus()"
+          name="cmd-input"
+          id="cmd-input"
+          type="text" />
+      </section>
+    </main>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu Mono", monospace;
+}
+
+body {
+  background-color: #29283b;
+  color: rgb(212, 212, 212);
+  width: 100vw;
+}
+
+button,
+a {
+  cursor: pointer;
+  text-decoration: none;
+  outline: none;
+}
+
+input {
+  outline: none;
+}
+
+main {
+  font-size: 1rem;
+  width: 100%;
+  padding: 0 0.5rem;
+}
+
+section#output-section > * {
+  padding: 0.2rem 0;
+}
+
+section#cmd-section {
+  display: flex;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+section#cmd-section input {
+  background-color: transparent;
+  width: 100%;
+  font-size: 1rem;
+  border: none;
+  color: rgb(212, 212, 212);
+}/*# sourceMappingURL=main.css.map */
