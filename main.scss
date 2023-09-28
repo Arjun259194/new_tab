@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
 $font-color: rgb(212, 212, 212);
+$font-size: 1.5rem;
 
 *,
 *::after,
@@ -29,7 +30,7 @@ input {
 }
 
 main {
-  font-size: 1rem;
+  font-size: $font-size;
   width: 100%;
   padding: 0 0.5rem;
 }
@@ -45,9 +46,9 @@ section#cmd-section {
 }
 
 section#cmd-section input {
+  font-size: $font-size;
   background-color: transparent;
   width: 100%;
-  font-size: 1rem;
   border: none;
   color: $font-color;
 }

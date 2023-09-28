@@ -19,8 +19,8 @@ function appendToOutput(output, cmd, section) {
 const cmdKeyHandler = (event) => {
   if (event.key === "Enter") {
     const inputValue = event.target.value;
-    cmdHandler(inputValue.trim(), cmdMap)
     event.target.value = ""
+    cmdHandler(inputValue.trim(), cmdMap)
   }
 }
 
@@ -47,4 +47,26 @@ cmdMap.set("clear", function () {
 cmdMap.set("youtube", function () {
   window.location.href = "https://www.youtube.com"
   return "redirecting to youtube..."
+})
+
+cmdMap.set("welcome", function () {
+  const msg = `
+                                                                                                                              bbbbbbbb            
+NNNNNNNN        NNNNNNNN                                                                TTTTTTTTTTTTTTTTTTTTTTT               b::::::b            
+N:::::::N       N::::::N                                                                T:::::::::::::::::::::T               b::::::b            
+N::::::::N      N::::::N                                                                T:::::::::::::::::::::T               b::::::b            
+N:::::::::N     N::::::N                                                                T:::::TT:::::::TT:::::T                b:::::b            
+N::::::::::N    N::::::N    eeeeeeeeeeee  wwwwwww           wwwww           wwwwwww     TTTTTT  T:::::T  TTTTTTaaaaaaaaaaaaa   b:::::bbbbbbbbb    
+N:::::::::::N   N::::::N  ee::::::::::::ee w:::::w         w:::::w         w:::::w              T:::::T        a::::::::::::a  b::::::::::::::bb  
+N:::::::N::::N  N::::::N e::::::eeeee:::::eew:::::w       w:::::::w       w:::::w               T:::::T        aaaaaaaaa:::::a b::::::::::::::::b 
+N::::::N N::::N N::::::Ne::::::e     e:::::e w:::::w     w:::::::::w     w:::::w                T:::::T                 a::::a b:::::bbbbb:::::::b
+N::::::N  N::::N:::::::Ne:::::::eeeee::::::e  w:::::w   w:::::w:::::w   w:::::w                 T:::::T          aaaaaaa:::::a b:::::b    b::::::b
+N::::::N   N:::::::::::Ne:::::::::::::::::e    w:::::w w:::::w w:::::w w:::::w                  T:::::T        aa::::::::::::a b:::::b     b:::::b
+N::::::N    N::::::::::Ne::::::eeeeeeeeeee      w:::::w:::::w   w:::::w:::::w                   T:::::T       a::::aaaa::::::a b:::::b     b:::::b
+N::::::N     N:::::::::Ne:::::::e                w:::::::::w     w:::::::::w                    T:::::T      a::::a    a:::::a b:::::b     b:::::b
+N::::::N      N::::::::Ne::::::::e                w:::::::w       w:::::::w                   TT:::::::TT    a::::a    a:::::a b:::::bbbbbb::::::b
+N::::::N       N:::::::N e::::::::eeeeeeee         w:::::w         w:::::w                    T:::::::::T    a:::::aaaa::::::a b::::::::::::::::b 
+N::::::N        N::::::N  ee:::::::::::::e          w:::w           w:::w                     T:::::::::T     a::::::::::aa:::ab:::::::::::::::b  
+NNNNNNNN         NNNNNNN    eeeeeeeeeeeeee           www             www                      TTTTTTTTTTT      aaaaaaaaaa  aaaabbbbbbbbbbbbbbbb   
+`
 })
